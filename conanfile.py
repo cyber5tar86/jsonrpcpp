@@ -26,8 +26,8 @@ class JsonRpcppConan(ConanFile):
 
     def package(self):
         self.copy(pattern="LICENSE", dst="licenses", src=self.source_folder)
-        self.copy(pattern="README.md", dst="licenses", src=self.source_folder)
-        self.copy("*.hpp", dst=src=os.path.join("include", "jsonrpcpp"), src=os.path.join(self.source_folder, include))
+        self.copy(pattern="README.md", src=self.source_folder)
+        self.copy("*.hpp", dst=os.path.join("include", "jsonrpcpp"), src=os.path.join(self.source_folder, "include"))
 
     def package_id(self):
         self.info.header_only()
