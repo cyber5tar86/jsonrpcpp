@@ -17,7 +17,7 @@ class JsonRpcppConan(ConanFile):
     exports = ["LICENSE.md", "README.md"]
     no_copy_source = True
 
-    scm = {"revision": "1.4.0",
+    scm = {"revision": "v1.4.0",
            "type": "git",
            "url": "https://github.com/cyber5tar86/jsonrpcpp"}
 
